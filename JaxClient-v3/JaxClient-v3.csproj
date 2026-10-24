@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ApplicationIcon>Assets\Icon.ico</ApplicationIcon>
+        <OutputType>WinExe</OutputType>
+        <AssemblyName>JaxClient-v3</AssemblyName>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <RootNamespace>JaxClient_v3</RootNamespace>
+        <Nullable>enable</Nullable>
+         
+        <ImplicitUsings>enable</ImplicitUsings>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <UseWPF>true</UseWPF>
+        <PublishSingleFile>true</PublishSingleFile>
+        <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+       
+    </PropertyGroup>
+    <ItemGroup>
+        <Resource Include="Languages\de.json" />
+        <Resource Include="Languages\en.json" />
+    </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Include="Languages\*.json" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="Assets\JXC.ico" />
+      <Resource Include="Assets\JXC.ico" />
+      <None Remove="Assets\Launcher.png" />
+      <Resource Include="Assets\Launcher.png" />
+      <None Remove="Assets\Launcher2.png" />
+      <Resource Include="Assets\Launcher2.png" />
+      <None Remove="Assets\Icon.ico" />
+      <Resource Include="Assets\Icon.ico" />
+      <None Remove="Assets\oii.png" />
+      <Resource Include="Assets\oii.png" />
+      <None Remove="Assets\pp\1.png" />
+      <Resource Include="Assets\pp\1.png" />
+      <None Remove="Assets\pp\2.png" />
+      <Resource Include="Assets\pp\2.png" />
+      <None Remove="Assets\pp\3.png" />
+      <Resource Include="Assets\pp\3.png" />
+      <None Remove="Assets\panorama\p1.png" />
+      <Resource Include="Assets\panorama\p1.png" />
+      <None Remove="Assets\panorama\p2.png" />
+      <Resource Include="Assets\panorama\p2.png" />
+      <None Remove="Assets\panorama\p3.png" />
+      <Resource Include="Assets\panorama\p3.png" />
+      <None Remove="Assets\steve.png" />
+      <Resource Include="Assets\steve.png" />
+      <None Remove="Assets\steve_skin.gif" />
+      <Resource Include="Assets\steve_skin.gif" />
+    </ItemGroup>
+
+ 
+    <ItemGroup>
+      <PackageReference Include="DiscordRichPresence" Version="1.6.1.70" />
+      <PackageReference Include="Magick.NET-Q8-AnyCPU" Version="14.17.1" />
+      <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.0" />
+      <PackageReference Include="OpenTK" Version="4.8.2" />
+      <PackageReference Include="OpenTK.WinForms" Version="4.0.0-pre.8" />
+      <PackageReference Include="Silk.NET.OpenGL" Version="2.23.0" />
+      <PackageReference Include="Silk.NET.Windowing" Version="2.23.0" />
+      <PackageReference Include="SkiaSharp" Version="4.151.2" />
+      <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+    </ItemGroup>
+    
+</Project>
